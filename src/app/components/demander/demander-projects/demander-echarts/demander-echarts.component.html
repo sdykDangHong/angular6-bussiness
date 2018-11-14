@@ -1,0 +1,19 @@
+<div class="headOwnTaskStatus clear">
+  <div class="ownStateEcharts">
+    <div echarts [options]="echartsOption" [loading]="loadedEcharts" style="width:240px;height:240px;"></div>
+  </div>
+  <div class="hr"><div></div></div>
+  <div class="ownStateTable">
+    <div>
+      <div class="tableItem clear" *ngFor="let listItem of stateList">
+        <div class="tableItemLine" *ngFor="let item of listItem">
+          <div class="icon" [ngStyle]="{'background-color':item.backgroundColor}"></div>
+          <div class="word">
+            <span>{{item.word}}</span>
+            <span class="state">{{item.state}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

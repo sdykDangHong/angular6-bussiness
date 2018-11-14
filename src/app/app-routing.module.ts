@@ -9,6 +9,7 @@ import {RecruitmentComponent} from "./components/tourist/recruitment/recruitment
 import {ProjectsComponent} from "./components/tourist/projects/projects.component";
 import {FreelancersComponent} from "./components/tourist/freelancers/freelancers.component";
 import {DemandsAddComponent} from "./components/tourist/demands-add/demands-add.component";
+import {DemanderProjectsComponent} from "./components/demander/demander-projects/demander-projects.component";
 
 const routes: Routes = [
   {path:"",component:HomeComponent},
@@ -23,6 +24,9 @@ const routes: Routes = [
       {path:"projects",component:ProjectsComponent},
       {path:"freelancers",component:FreelancersComponent},
       {path:"demands-add",component:DemandsAddComponent},
+  ]},
+  {path:"demander",children:[
+      {path:"projects",component:DemanderProjectsComponent}
   ]}
 ];
 

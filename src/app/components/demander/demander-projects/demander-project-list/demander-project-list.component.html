@@ -1,0 +1,33 @@
+<div class="ownProjectList">
+  <div class="projectSearch">
+    <div class="searchTab">
+      <span class="tabItem">需求列表</span>
+    </div>
+    <div class="searchBox clear">
+      <div class="searchDemandTitle clear">
+        <div class="tit">我的需求</div>
+        <div class="demandTitleInput">
+          <nz-input-group nzSearch [nzSuffix]="suffixIconButton" [nzSize]="'large'">
+            <input type="text" nz-input placeholder="请输入需求名称">
+          </nz-input-group>
+          <ng-template #suffixIconButton>
+            <button nz-button nzType="primary" [nzSize]="'large'" nzSearch><i nz-icon type="search"></i></button>
+          </ng-template>
+        </div>
+      </div>
+      <div class="demandSort clear">
+        <div class="sortIcon" (click)="changeSort()">
+          <i nz-icon type="swap" theme="outline"></i>
+        </div>
+        <div class="sortWord">需求到期时间</div>
+      </div>
+    </div>
+    <app-demander-project-item *ngFor="let item of demandList" [demandData]="item"></app-demander-project-item>
+    <div class="projectPage" *ngIf="dataTotal>0">
+      <nz-pagination [nzPageIndex]="page" [nzTotal]="dataTotal" (nzPageIndexChange)="pageChange($event)"></nz-pagination>
+    </div>
+    <div class="ownProjectIsNull" *ngIf="dataTotal<=0">
+      <h2>暂无需求</h2>
+    </div>
+  </div>
+</div>

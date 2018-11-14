@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
+import { NgxEchartsModule } from "ngx-echarts"
 //  公共服务声明以及全局提供使用
 import {CommonStoreService} from "./service/commonStore/common-store.service";
 /*  页面组件引用声明  */
@@ -46,6 +47,11 @@ import { DemandsAddComponent } from './components/tourist/demands-add/demands-ad
 import { DemandsAddBodyComponent } from './components/tourist/demands-add/demands-add-body/demands-add-body.component';
 import { DemandsAddRegisterComponent } from './components/tourist/demands-add/demands-add-register/demands-add-register.component';
 import { DemandsAddFormComponent } from './components/tourist/demands-add/demands-add-form/demands-add-form.component';
+import { DemanderProjectsComponent } from './components/demander/demander-projects/demander-projects.component';
+import { DemanderEchartsComponent } from './components/demander/demander-projects/demander-echarts/demander-echarts.component';
+import { DemanderProjectListComponent } from './components/demander/demander-projects/demander-project-list/demander-project-list.component';
+import { DemanderProjectItemComponent } from './components/demander/demander-projects/demander-project-item/demander-project-item.component';
+import { DemandStatusPipe } from './pipe/demandStatus/demand-status.pipe';
 
 registerLocaleData(zh);
 
@@ -82,6 +88,11 @@ registerLocaleData(zh);
     DemandsAddBodyComponent,
     DemandsAddRegisterComponent,
     DemandsAddFormComponent,
+    DemanderProjectsComponent,
+    DemanderEchartsComponent,
+    DemanderProjectListComponent,
+    DemanderProjectItemComponent,
+    DemandStatusPipe,
   ],
   imports: [
     BrowserModule,
@@ -90,6 +101,7 @@ registerLocaleData(zh);
     HttpClientModule,
     BrowserAnimationsModule,
     NgZorroAntdModule,
+    NgxEchartsModule
   ],
   providers: [CommonStoreService,HttpProvider, { provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]

@@ -1,0 +1,14 @@
+<div class="projectItem">
+  <div class="line firstLine clear">
+    <div class="lineItem left">{{demandData.skill_name | freelancerSkillFilter}}</div>
+    <div class="lineItem center">{{demandData.title}}</div>
+    <div class="lineItem right">发布日期：{{demandData.create_time | date:['yyyy-MM-dd']}}</div>
+  </div>
+  <div class="line secondLine clear">
+    <div class="lineItem left">对接人数：{{demandData.chatCount}}</div>
+    <div class="lineItem center">项目预算：{{demandData.budget_amount}}</div>
+  </div>
+  <div class="statusPos">
+    <div class="statusWord">{{demandData.status | demandStatus}}</div>
+  </div>
+</div>
