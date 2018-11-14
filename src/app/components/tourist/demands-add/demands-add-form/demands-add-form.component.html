@@ -1,0 +1,45 @@
+<div class="addDemand">
+  <div class="title">
+    <h1>发布需求</h1>
+    <div>
+      <img src="/assets/images/addDemandHr.png" alt="hr"/>
+    </div>
+  </div>
+  <div class="contentList">
+    <div class="contentItem">
+      <p class="tit">需求名称</p>
+      <div class="input">
+        <input nz-input [nzSize]="'large'" placeholder="请输入您的需求标题" [(ngModel)]="demandTitle">
+      </div>
+    </div>
+    <div class="contentItem">
+      <p class="tit">交付日期</p>
+      <div class="input">
+        <nz-date-picker [nzSize]="'large'" [nzClassName]="'widthAll'" [(ngModel)]="demandDate" style="width:100%;"></nz-date-picker>
+      </div>
+    </div>
+    <div class="contentItem">
+      <p class="tit">服务类型</p>
+      <div class="input">
+        <nz-cascader
+          [nzExpandTrigger]="'hover'"
+          [nzSize]="'large'"
+          class="widthAll"
+          [nzPlaceHolder]="'请选择服务类型'"
+          [nzOptions]="serviceTagsList"
+          [(ngModel)]="serviceTags">
+        </nz-cascader>
+      </div>
+    </div>
+    <div class="contentItem">
+      <p class="tit">需求费用</p>
+      <div class="input">
+        <nz-select [nzSize]="'large'" style="width: 100%;" [nzPlaceHolder]="'请选择需求费用'" [(ngModel)]="demandBudget">
+          <nz-option *ngFor="let item of budgetAmountList" [nzLabel]="item" [nzValue]="item">
+          </nz-option>
+        </nz-select>
+      </div>
+    </div>
+    <div class="addDemandBtn"><button nz-button nzType="primary">发布需求</button></div>
+  </div>
+</div>

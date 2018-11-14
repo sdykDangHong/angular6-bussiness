@@ -1,0 +1,3 @@
+<app-header-item-no-login [isHome]="isHome" *ngIf="!userInfo['customerId']"></app-header-item-no-login>
+<app-header-item-demander *ngIf="userInfo['loginState']==1" [menuList]="menuList" [userInfo]="userInfo" (handle)="handle($event,1)"></app-header-item-demander>
+<app-header-item-freelancer *ngIf="userInfo['loginState']==2" [menuList]="menuList" [userInfo]="userInfo"  (handle)="handle($event,2)"></app-header-item-freelancer>

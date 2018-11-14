@@ -1,0 +1,17 @@
+<div class="freelancerItem clear" [ngClass]="{'marginTopNone':isFirst}">
+  <div class="headerPic">
+    <div class="img"><img [src]="freelancerItem.headerpic | userHeaderPic" [alt]="freelancerItem.nick">
+    </div>
+    <div class="nick">{{freelancerItem.nick}}</div>
+  </div>
+  <div class="userInfo">
+    <div class="top clear">
+      <i *ngFor="let item of freelancerItem.skills | freelancerSkillFilter">{{item}}</i>
+    </div>
+    <div class="center clear">
+      <div class="tit">信息完整度：</div>
+      <nz-progress [nzPercent]="freelancerItem.info_score" nzSize="small" style="float:left;width:100px;" strokeColor="#ff5455" [nzShowInfo]="false"></nz-progress>
+      <span class="percentNum">{{freelancerItem.info_score}}%</span>
+    </div>
+  </div>
+</div>

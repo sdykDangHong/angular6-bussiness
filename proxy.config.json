@@ -1,0 +1,8 @@
+{
+  "/gate":{
+    "target":"http://47.93.180.1:8965"
+  },
+  "/rcmd":{
+    "target":"http://ai.315free.com:50125"
+  }
+}

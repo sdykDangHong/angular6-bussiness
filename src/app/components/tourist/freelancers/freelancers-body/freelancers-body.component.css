@@ -1,0 +1,26 @@
+.freelancers {
+  width: 1000px;
+  margin: 0 auto;
+}
+.freelancers .freelancerTit {
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+  padding: 35px 0 18px;
+}
+.freelancers .freelancerTit span {
+  color: #000;
+  font-size: 20px;
+}
+.freelancers .freelancerTit .toDemand {
+  width: 120px;
+  height: 38px;
+  text-align: center;
+  line-height: 38px;
+  font-size: 15px;
+  color: #fff;
+  background: #ff5455;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.pageBox{width:100%;padding:30px 0;text-align:right;}

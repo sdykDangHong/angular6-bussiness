@@ -1,0 +1,74 @@
+.footerBg {
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+.footerBg .footer {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0px 20px;
+}
+
+.footerBg .footer .left {
+  float: left;
+  width: 80px;
+  margin: -3px 150px 0px 0px;
+}
+
+.footerBg .footer .left > img {
+  width: 100%;
+}
+
+.footerBg .footer .center {
+  float: left;
+  width: 211px;
+}
+
+.footerBg .footer .center .center_left {
+  float: left;
+}
+
+.footerBg .footer .center .center_left a {
+  display: block;
+  margin-top: 16px;
+  cursor: pointer;
+  line-height: 14px;
+}
+
+.footerBg .footer .center .center_left a:nth-child(1) {
+  margin-top: 0px;
+}
+
+.footerBg .footer .center .center_left.center_right {
+  float: right;
+}
+
+.footerBg .footer .right {
+  float: right;
+}
+
+.footerBg .footer .right .right_item {
+  width: 100px;
+  float: left;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.footerBg .footer .right .right_item:nth-child(1) {
+  margin-left: 0px;
+}
+
+.footerBg .footer .right .right_item img {
+  width: 100px;
+}
+
+.footerBg .footer .right .right_item p {
+  margin-top: 6px;
+}
+
+.footerBg .footer .textAlign {
+  clear: both;
+  font-size: 12px;
+  text-align: center;
+  color: #666;
+}

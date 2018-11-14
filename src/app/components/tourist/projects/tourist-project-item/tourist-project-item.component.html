@@ -1,0 +1,12 @@
+<div class="demandItem" [ngClass]="{'marginTopNone':isFirst}">
+  <div class="first">
+    <span title="民俗餐饮住宿">{{demandData.title }}</span><span class="time">发布时间：{{demandData.insert_time | date:['yyyy-MM-dd'] || demandData.createTime | date:['yyyy-MM-dd']}}</span>
+  </div>
+  <div class="second">
+    <span>{{demandData.city}}</span></div
+  >
+  <div class="three">
+    <span class="money">项目预算：<i class="memon">{{demandData.budget_range}}</i></span>
+  </div>
+  <i nz-icon type="double-right" theme="outline" class="right-icon"></i>
+</div>

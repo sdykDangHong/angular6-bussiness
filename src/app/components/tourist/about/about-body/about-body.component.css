@@ -1,0 +1,123 @@
+.aboutBody {
+  width: 800px;
+  margin: 0 auto;
+  padding:30px 0 80px;
+}
+
+.timeItem {
+  padding-bottomnn: 20px;
+}
+
+.time {
+  float: left;
+  font-size: 16px;
+  color: #ff5455;
+  line-height: 20px;
+  margin-right: 15px;
+  width: 160px;
+}
+
+.timeWord {
+  font-size: 14px;
+  color: #999;
+  line-height: 20px;
+  float: left;
+  width: 600px;
+}
+
+.content {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.content .contentText {
+  margin-top: 20px;
+}
+
+.content .contentText .tit {
+  font-size: 15px;
+  color: #333333;
+}
+
+.content .contentText .text {
+  font-size: 14px;
+  color: #666666;
+  line-height: 29px;
+  margin-top: 10px;
+}
+
+.content .contentText .indent {
+  text-indent: 28px;
+}
+
+.content1 .content-body {
+  margin-top: 108px;
+  border-left: 2px solid #D8D8D8;
+  padding-left: 20px;
+}
+
+.content1 .content-body .item {
+  position: relative;
+  margin-top: 50px;
+}
+
+.content1 .content-body .item:nth-child(1) {
+  margin-top: 0px;
+}
+
+.content1 .content-body .item .icon {
+  position: absolute;
+  left: -30px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #d8d8d8;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content1 .content-body .item .icon i {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: #d8d8d8;
+}
+
+.content1 .content-body .item .text {
+  line-height: 20px;
+}
+
+.content1 .content-body .item .text b {
+  font-weight: 400px;
+  color: #AA0622;
+  width: 140px;
+  display: inline-block;
+}
+
+.development {
+  margin-top: 30px;
+}
+
+.development .time {
+  width: 160px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  float: left;
+  color: #aa0622;
+  height: 50px;
+}
+
+.development .content {
+  width: 800px;
+  float: left;
+  height: 50px;
+}
+
+.contact p {
+  margin: 50px 0;
+  font-size: 16px;
+}

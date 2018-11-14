@@ -1,0 +1,53 @@
+.homeBody {
+  width: 100%;
+  height: 100vh;
+  min-height:500px;
+  padding-top: 84px;
+  margin-top:-84px;
+  box-sizing: border-box;
+  position: relative;
+  z-index:-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeWord > img {
+  display: block;
+  margin: 0 auto;
+}
+
+.homeBtnGroup {
+  margin-top: 50px;
+}
+
+.homeBtnGroup div {
+  width: 230px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 0;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.homeBtnGroup div.demandAdd {
+  color: #fff;
+  float: left;
+  background: #ff5455;
+}
+
+.homeBtnGroup div.register {
+  float: right;
+  color: #ff5455;
+  border: 1px solid #ff5455;
+}
+
+.textAlign {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}

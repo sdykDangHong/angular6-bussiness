@@ -1,0 +1,91 @@
+.recruitmentBox {
+  padding-bottom: 100px;
+}
+.recruitmentBox .title {
+  font-size: 30px;
+  color: #666666;
+  margin: 60px 0px;
+  text-align: center;
+}
+.recruitmentBox .head {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 20px;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+.recruitmentBox .head:nth-of-type(1) {
+  margin: 0 auto;
+}
+.recruitmentBox .head span:nth-child(1) {
+  flot: left;
+}
+.recruitmentBox .head span:nth-child(2) {
+  flot: left;
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+}
+.recruitmentBox .head span:nth-child(3) {
+  float: right;
+}
+.recruitmentBox .content {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: all .5s;
+  height: 0px;
+}
+.recruitmentBox .content .el-icon-caret-top {
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  color: #F9F9F9;
+  margin-left: -15px;
+  top: 0px;
+  opacity: 0;
+}
+.recruitmentBox .content .content-div {
+  background: #F9F9F9;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.recruitmentBox .content .content-div .center {
+  width: 600px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #666666;
+  line-height: 30px;
+}
+.recruitmentBox .border {
+  border-bottom: 1px solid #E8E8E9;
+}
+.recruitmentBox .show {
+  height: 300px;
+}
+.recruitmentBox .show .el-icon-caret-top {
+  opacity: 1;
+}
+.recruitmentBox .show1 {
+  height: 500px;
+}
+.recruitmentBox .show1 .el-icon-caret-top {
+  opacity: 1;
+}
+.recruitmentBox .show2 {
+  height: 610px;
+}
+.recruitmentBox .show2 .el-icon-caret-top {
+  opacity: 1;
+}
+.recruitmentBox .show3 {
+  height: 480px;
+}
+.recruitmentBox .show3 .el-icon-caret-top {
+  opacity: 1;
+}

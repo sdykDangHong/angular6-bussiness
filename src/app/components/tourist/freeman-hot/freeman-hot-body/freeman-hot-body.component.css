@@ -1,0 +1,24 @@
+.freelanHotBox {
+  display: block;
+  margin: 0 auto;
+  width: 1000px;
+  padding: 55px 0px;
+  text-align: center;
+}
+.freelanHotBox .first {
+  font-size: 42px;
+  color: #AA0622;
+}
+.freelanHotBox .second {
+  font-size: 25px;
+  color: #333333;
+  margin-top: 20px;
+}
+.freelanHotBox .second span {
+  font-size: 36px;
+  color: #AA0622;
+  line-height: 36px;
+}
+.freelanHotBox img {
+  margin-top: 50px;
+}

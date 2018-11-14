@@ -1,0 +1,23 @@
+<div class="registerBoxInput">
+  <div class="inputItem clear nick"><span>昵称</span>
+    <input type="text" placeholder="请输入昵称" data-name="nick">
+  </div>
+  <div class="inputItem clear mobile"><span>账号</span>
+    <input type="text" placeholder="请输入手机号" data-name="mobile">
+  </div>
+  <div class="inputItem clear yzm">
+    <span>验证码</span>
+    <input type="text" placeholder="请输入验证码" data-name="yzm">
+    <div class="yzmImg"><img [src]="picCode.imgStr" alt="图片验证码" (click)="getPicCode()"></div>
+  </div>
+  <div class="inputItem clear password"><span>密码</span>
+    <input type="password" placeholder="请输入密码" data-name="password">
+  </div>
+  <div class="registerAgreement">
+    <label nz-checkbox [(ngModel)]="registerAgreementChecked"></label>
+    <span>我已阅读<a target="_blank" href="https://h5.315free.com/networkPro.html" style="color: blue;">用户协议</a>，并同意加入平台</span></div>
+  <div class="demandsRegisterBtn">
+    <button nz-button nzType="primary" (click)="register()">注册并登录</button>
+  </div>
+  <div class="toLogin"><a routerLink="/login"><i nz-icon type="user" theme="outline"></i>已有账号去登陆</a></div>
+</div>

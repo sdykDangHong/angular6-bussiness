@@ -1,0 +1,65 @@
+.teamTitle {
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+  padding: 100px 0 50px;
+}
+.teamTitle:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #aa0622;
+  margin: 14px auto 0px;
+}
+.content {
+  display: flex;
+  width: 1260px;
+  margin: 0 auto;
+}
+.content .content-div {
+  flex: 1;
+  float: left;
+  box-sizing: border-box;
+}
+.content .content-div .img {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 130px;
+  height: 150px;
+}
+.content .content-div .img img {
+  width: 100%;
+}
+.content .content-div .content-body {
+  border-left: 1px dotted #ccc;
+  padding: 0px 30px;
+  height: 200px;
+}
+.content .content-div .content-body .tit {
+  text-align: center;
+  font-size: 15px;
+  color: #333333;
+  margin: 10px 0px;
+}
+.content .content-div .content-body .text {
+  font-size: 14px;
+  color: #666666;
+  line-height: 22px;
+  text-align: center;
+}
+.content .content-div .content-body .textLeft {
+  text-align: left;
+}
+.content .content-div .borderNone {
+  border-left: none;
+}
+.content .content-div:nth-of-type(3n+1) {
+  margin-left: 0px;
+}
+.content2 {
+  padding: 60px 0px 100px;
+}
+.content2 .content-div .content-body {
+  height: 300px;
+}

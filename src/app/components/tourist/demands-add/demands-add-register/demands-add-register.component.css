@@ -1,0 +1,66 @@
+.registerBoxInput {
+  width: 500px;
+  padding: 80px 100px 0;
+  position: relative;
+}
+.registerBoxInput .inputItem {
+  padding: 0 0 6px 70px;
+  position: relative;
+  height: 52px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+}
+.registerBoxInput .inputItem span {
+  position: absolute;
+  text-align: left;
+  left: 0px;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  float: left;
+  width: 60px;
+}
+.registerBoxInput .inputItem input {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+.registerBoxInput .inputItem.yzm input {
+  width: 70%;
+  float: left;
+}
+.registerBoxInput .inputItem.yzm .yzmImg {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registerBoxInput .inputItem.yzm .yzmImg img {
+  width: 80%;
+  cursor: pointer;
+}
+.registerBoxInput .registerAgreement {
+  margin-top: 20px;
+}
+.registerBoxInput .demandsRegisterBtn {
+  width: 100%;
+  margin-top: 20px;
+}
+.registerBoxInput .demandsRegisterBtn button {
+  width: 100%;
+  height: 40px;
+}
+.registerBoxInput .toLogin {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 12px;
+}
+.registerBoxInput .toLogin a {
+  color: #9b9b9b;
+}
+.registerBoxInput .toLogin a:hover {
+  color: #ff5455;
+}

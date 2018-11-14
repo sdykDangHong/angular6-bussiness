@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('./assets/theme/index.css');
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  font-weight:normal;
+  vertical-align:baseline;
+  background:transparent;
+  outline-style:none;/*FF*/
+  user-select:none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html,body{
+  line-height:1;
+  color:#000;
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  font-size:14px;
+  font-family:"Microsoft Yahei","微软雅黑", Helvetica, Arial, STHeiti, "华文细黑", sans-serif;
+}
+a{
+  margin:0;
+  padding:0;
+  border:0;
+  color:#000;
+  text-decoration:none;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+
+}
+ul,ol,li{
+  list-style:none;
+}
+a:hover,a:focus{
+  text-decoration:none;
+  outline-style:none;/*FF*/
+}
+i,em{font-style:normal;}
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+input,select,button,textarea{
+  vertical-align:middle;
+  outline:none;border:none;
+}
+.clear::before,
+.clear::after{
+  content:"";
+  height:0;
+  line-height:0;
+  display:block;
+  visibility:hidden;
+  clear:both;
+}
+.clear:after{clear:both;}
+.clear{*zoom:1;/*IE/7/6*/}
+#container{overflow-y:auto;overflow-x:hidden;height:100%;}
+
+.container{display:flex;width:100%;flex-direction: column;min-height:100vh;}
+.headerModule{width:100%;flex:0 1 84px;}
+.bodyModule{flex:1;}
+.footerModule{flex:0 1 183px;}
+.el-icon--right{
+  display:none;
+}
+.ant-spin-nested-loading>div>.ant-spin{max-height:100%;}
+.widthAll{width:100%;}

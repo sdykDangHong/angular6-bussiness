@@ -1,0 +1,66 @@
+.freelancerItem {
+  padding: 26px 40px;
+  border: 1px solid #eee;
+  width: 100%;
+  margin-top: 20px;
+}
+.marginTopNone{
+  margin-top:0px;
+}
+.freelancerItem .headerPic {
+  width: 100px;
+  float: left;
+  text-align: center;
+}
+.freelancerItem .headerPic .img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.freelancerItem .headerPic .img img {
+  width: 100%;
+}
+.freelancerItem .headerPic .nick {
+  margin-top: 10px;
+  font-size: 15px;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.freelancerItem .userInfo {
+  padding-left: 136px;
+  margin-left: -100px;
+  float: left;
+}
+.freelancerItem .userInfo .top i {
+  display: block;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: #333;
+  line-height: 14px;
+  border: 1px solid #f0f0f0;
+  float: left;
+  margin-left: 10px;
+  font-style: normal;
+}
+.freelancerItem .userInfo .top i:nth-of-type(1) {
+  margin-left: 0px;
+}
+.freelancerItem .userInfo .center {
+  margin-top: 20px;
+  width: 300px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+.freelancerItem .userInfo .center .tit {
+  float: left;
+  margin-right: 10px;
+}
+.percentNum{
+  float:left;margin-left:8px;font-size:12px;color:#999;
+}

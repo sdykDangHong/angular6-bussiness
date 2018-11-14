@@ -1,0 +1,28 @@
+<app-footer-body-common [title]="'核心团队'"></app-footer-body-common>
+<div class="teamBody">
+    <h1 class='teamTitle'>核心团队</h1>
+    <div class="content clear">
+      <div class="content-div" *ngFor="let item of First">
+        <div class="img">
+          <img src="{{item.imgSrc}}" alt="{{item.name}}" />
+        </div>
+        <div class="{{index===0?'content-body borderNone':'content-body'}}">
+          <p class="tit">{{item.name}}</p>
+          <p class="tit">{{item.card}}</p>
+          <p class="text textLeft">{{item.desc}}</p>
+        </div>
+      </div>
+    </div>
+  <div class="content2 content clear">
+    <div class="content-div" *ngFor="let item of Second">
+      <div class="img">
+        <img src="{{item.imgSrc}}" alt="{{item.name}}" />
+      </div>
+      <div class="{{index===0?'content-body borderNone':'content-body'}}">
+        <p class="tit">{{item.name}}</p>
+        <p class="tit">{{item.card}}</p>
+        <p class="text textLeft">{{item.desc}}</p>
+      </div>
+    </div>
+  </div>
+</div>

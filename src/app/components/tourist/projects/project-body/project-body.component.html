@@ -1,0 +1,9 @@
+<div class="projects">
+  <h1>需求中心</h1>
+  <div class="demandList">
+    <app-tourist-project-item *ngFor="let item of demandList,first as isFirst" [isFirst]="isFirst" [demandData]="item"></app-tourist-project-item>
+  </div>
+  <div class="pageBox">
+    <nz-pagination [nzPageIndex]="page" [nzTotal]="dataTotal" (nzPageIndexChange)="pageChange($event)"></nz-pagination>
+  </div>
+</div>

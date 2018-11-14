@@ -1,0 +1,35 @@
+<div class="headerBg">
+  <div class="headerBox">
+    <div class="logo">
+      <img src="/assets/images/logo.png" alt="" [routerLink]="['/']">
+    </div>
+    <div class="linkListLeft clear">
+      <div class="linkItem">
+        <span>工作台</span>
+      </div>
+      <div class="linkItem">
+        <span>找需求</span>
+      </div>
+    </div>
+    <div class="linkRightList clear">
+      <div class="linkItem" onclick="window.open('https://baidu.com')">
+        <span>帮助中心</span>
+      </div>
+      <div class="linkItem">
+        <nz-dropdown>
+          <div class="userMenu" nz-dropdown>
+            <div class="cardIcon">
+              <img src="/assets/images/freelancerImg.png" alt=""/>
+            </div>
+            <div class="nick">{{userInfo['nick']}}</div>
+          </div>
+          <ul nz-menu>
+            <li nz-menu-item *ngFor="let item of menuList" (click)="change(item)">
+              <a>{{item.label}}</a>
+            </li>
+          </ul>
+        </nz-dropdown>
+      </div>
+    </div>
+  </div>
+</div>

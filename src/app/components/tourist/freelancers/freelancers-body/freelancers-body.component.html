@@ -1,0 +1,12 @@
+<div class="freelancers">
+  <div class="freelancerTit">
+    <span>智库中心</span>
+    <div routerLink="/demands-add" class="toDemand">发布需求</div>
+  </div>
+  <div class="freelancerList">
+    <app-tourist-freelancers-item *ngFor="let item of freelancers,first as isFirst" [isFirst]="isFirst" [freelancerItem]="item"></app-tourist-freelancers-item>
+  </div>
+  <div class="pageBox">
+    <nz-pagination [nzPageIndex]="page" [nzTotal]="dataTotal" (nzPageIndexChange)="pageChange($event)"></nz-pagination>
+  </div>
+</div>

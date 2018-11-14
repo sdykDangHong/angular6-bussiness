@@ -1,0 +1,6 @@
+<div class="demands-add">
+  <div class="demands-add-box">
+    <app-demands-add-register (demandsAddRegister)="demandsAddRegister($event)" *ngIf="demandsStep==0"></app-demands-add-register>
+    <app-demands-add-form *ngIf="demandsStep==1"></app-demands-add-form>
+  </div>
+</div>
