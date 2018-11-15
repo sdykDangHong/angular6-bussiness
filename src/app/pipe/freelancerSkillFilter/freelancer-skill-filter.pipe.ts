@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class FreelancerSkillFilterPipe implements PipeTransform {
 
   transform(value:any,args?: any): any {
-    if(value.includes(',')){value=value.split(',')}else{value=[value]}
+    if (typeof value=='string') {if(value.includes(',')){value=value.split(',')}else{value=[value]}}
     if(value.length<=0){return ['暂无']}
     let arr=[];
     value.map((item)=>{

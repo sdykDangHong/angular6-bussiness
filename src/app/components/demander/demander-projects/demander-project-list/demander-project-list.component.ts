@@ -14,6 +14,7 @@ export class DemanderProjectListComponent implements OnInit {
   public pageSize:number=10;
   public sort:number=1;
   public demandList:any[]=[];
+  public demandTitle:string="";
   constructor(
     private demanderProject:DemanderProjectsService,
     private commonStore:CommonStoreService,
@@ -24,17 +25,22 @@ export class DemanderProjectListComponent implements OnInit {
     if(this.commonStore.getUserInfo()['customerId']){
       this.getDemandList()
     }else{
-      this.commonStore.userInfoUpdated.subscribe(res=>{
+      this.commonStore.userInfoUpdated.subscribe((res:any)=>{
+        if(!res.customerId){return false}
         this.getDemandList()
       })
     }
+  }
+  search(){
+    this.page=1;
+    this.getDemandList()
   }
   pageChange(event){
     this.page=event
     this.getDemandList()
   }
   getDemandList(){
-    this.demanderProject.getDemandList(this.page,this.pageSize,this.sort).then((res:any)=>{
+    this.demanderProject.getDemandList(this.page,this.pageSize,this.sort,this.demandTitle).then((res:any)=>{
       this.demandList=res.list;
       this.dataTotal=res.total;
       this.util.resetScrollTop()

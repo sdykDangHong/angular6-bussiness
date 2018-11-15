@@ -57,6 +57,9 @@ import { FreelancerProjectListComponent } from './components/freelancer/freelanc
 import { FreelancerProjectItemComponent } from './components/freelancer/freelancer-projects/freelancer-project-item/freelancer-project-item.component';
 import { FreelancerSearchProjectsComponent } from './components/freelancer/freelancer-search-projects/freelancer-search-projects.component';
 import { FreelancerSearchProjectListComponent } from './components/freelancer/freelancer-search-projects/freelancer-search-project-list/freelancer-search-project-list.component';
+import { RegisterComponent } from './components/tourist/register/register.component';
+import { RegisterStepOneComponent } from './components/tourist/register/register-step-one/register-step-one.component';
+import { RegisterStepTwoComponent } from './components/tourist/register/register-step-two/register-step-two.component';
 
 registerLocaleData(zh);
 
@@ -103,6 +106,9 @@ registerLocaleData(zh);
     FreelancerProjectItemComponent,
     FreelancerSearchProjectsComponent,
     FreelancerSearchProjectListComponent,
+    RegisterComponent,
+    RegisterStepOneComponent,
+    RegisterStepTwoComponent,
   ],
   imports: [
     BrowserModule,

@@ -7,19 +7,19 @@
         <div class="icon">
           <img src="/assets/images/login_user.png" alt="手机号">
         </div>
-        <input type="text" [(ngModel)]="form.mobile" placeholder="请输入您的手机号">
+        <input type="text" [(ngModel)]="form.mobile" placeholder="请输入您的手机号" (keydown.enter)="login()">
       </div>
       <div class="inputItem">
         <div class="icon">
           <img src="/assets/images/login_pwd.png" alt="密码">
         </div>
-        <input type="password" [(ngModel)]="form.password" placeholder="请输入您的密码">
+        <input type="password" [(ngModel)]="form.password" placeholder="请输入您的密码" (keydown.enter)="login()">
       </div>
       <div class="inputItem">
         <div class="icon">
           <img src="/assets/images/login_send.png" alt="密码">
         </div>
-        <input type="text" [(ngModel)]="form.code" placeholder="请输入图片验证码">
+        <input type="text" [(ngModel)]="form.code" placeholder="请输入图片验证码" (keydown.enter)="login()">
         <div class="qrcodeBox">
           <img [src]="[codePic.imgStr]" alt="图片验证码" (click)="getCode()">
         </div>

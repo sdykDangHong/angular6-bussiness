@@ -25,12 +25,14 @@ export class FreelancerProjectListComponent implements OnInit {
     if(this.commonStore.getUserInfo()['customerId']){
       this.getProjects()
     }else{
-      this.commonStore.userInfoUpdated.subscribe(res=>{
+      this.commonStore.userInfoUpdated.subscribe((res:any)=>{
+        if(!res.customerId){return false}
         this.getProjects()
       })
     }
   }
   changeSort(){
+    this.page=1;
     this.sort=3-this.sort;
     this.getProjects()
   }

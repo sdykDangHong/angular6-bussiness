@@ -9,8 +9,8 @@ import {LoginService} from "../../../../service/login/login.service";
 })
 export class LoginBodyComponent implements OnInit {
   private form:object={
-    mobile:"",
-    password:"",
+    mobile:"15810741493",
+    password:"888888",
     code:""
   }
   private codePic:object={};

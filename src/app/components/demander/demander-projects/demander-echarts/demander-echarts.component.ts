@@ -59,7 +59,8 @@ export class DemanderEchartsComponent implements OnInit {
     if(this.commonStore.getUserInfo()['customerId']){
       this.getDemandStatus()
     }else{
-      this.commonStore.userInfoUpdated.subscribe(res=>{
+      this.commonStore.userInfoUpdated.subscribe((res:any)=>{
+        if(!res.customerId){return false}
         this.getDemandStatus()
       })
     }

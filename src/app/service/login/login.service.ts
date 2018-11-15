@@ -33,9 +33,14 @@ export class LoginService{
       .set("source",'2')
     this.$http.post("/gate/sdyk-bussiness/customer/login.shtml",null,{
       params:params
-    }).subscribe(res=>{
+    }).subscribe((res:any)=>{
       this.util.setCookie('token',res['data']['token'],180)
       this.commonStore.submitUserInfo(res['data'])
+      if(res.data.loginState==1){
+        this.router.navigate(['/demander/projects'])
+      }else{
+        this.router.navigate(['/freelancer/projects'])
+      }
     })
   }
 }

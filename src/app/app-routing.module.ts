@@ -12,11 +12,14 @@ import {DemandsAddComponent} from "./components/tourist/demands-add/demands-add.
 import {DemanderProjectsComponent} from "./components/demander/demander-projects/demander-projects.component";
 import {FreelancerProjectsComponent} from "./components/freelancer/freelancer-projects/freelancer-projects.component";
 import {FreelancerSearchProjectsComponent} from "./components/freelancer/freelancer-search-projects/freelancer-search-projects.component";
+import {Register} from "ts-node";
+import {RegisterComponent} from "./components/tourist/register/register.component";
 
 const routes: Routes = [
   {path:"",component:HomeComponent},
   {path:"",children:[
       {path:"login",component:LoginComponent},
+      {path:"register",component:RegisterComponent},
       {path:"about",component:AboutComponent},
       {path:"development",component:AboutComponent},
       {path:"contact",component:AboutComponent},

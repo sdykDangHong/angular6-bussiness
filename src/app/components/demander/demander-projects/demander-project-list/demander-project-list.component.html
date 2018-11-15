@@ -8,10 +8,10 @@
         <div class="tit">我的需求</div>
         <div class="demandTitleInput">
           <nz-input-group nzSearch [nzSuffix]="suffixIconButton" [nzSize]="'large'">
-            <input type="text" nz-input placeholder="请输入需求名称">
+            <input nz-input placeholder="请输入需求名称" (keydown.enter)="search()" [(ngModel)]="demandTitle"/>
           </nz-input-group>
-          <ng-template #suffixIconButton>
-            <button nz-button nzType="primary" [nzSize]="'large'" nzSearch><i nz-icon type="search"></i></button>
+          <ng-template #suffixIconButton style="right:0px;">
+            <button nz-button nzType="primary" [nzSize]="'large'" (click)="search()"><i nz-icon type="search"></i></button>
           </ng-template>
         </div>
       </div>
