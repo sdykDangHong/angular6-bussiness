@@ -1,0 +1,19 @@
+<div class="inputItem clear {{item.name}}" *ngFor="let item of inputList">
+  <span>
+      <img [src]="item.icon" [alt]="item.imgAlt"/>
+  </span>
+  <input [type]="item.inputType" [placeholder]="item.inputPlaceHolder" />
+  <div class="yzmImg" *ngIf="item.yzm">
+    <img [src]="yzmCode.imgStr" alt="图片验证码" onClick="getCode()"/>
+  </div>
+</div>
+<div class="cardRadio">
+  <nz-radio-group [(ngModel)]="userState" [nzSize]="'large'" class="widthAll" style="display: flex;justify-content: space-between;">
+    <label nz-radio nzValue="0">我是客户</label>
+    <label nz-radio nzValue="1">我是智库</label>
+  </nz-radio-group>
+</div>
+<div class="registerAgreement">
+  <label nz-checkbox [(ngModel)]="agreementChecked"></label>
+  <span>我已阅读<a target="_blank" style="color:blue" href="https://h5.315free.com/networkPro.html">用户协议</a>，并同意加入平台</span>
+</div>

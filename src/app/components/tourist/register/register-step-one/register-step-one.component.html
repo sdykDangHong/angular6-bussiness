@@ -1,0 +1,9 @@
+<div class="inputItem clear {{item.name}}" *ngFor="let item of inputList">
+  <span>
+      <img [src]="item.icon" [alt]="item.imgAlt"/>
+  </span>
+  <input [type]="item.inputType" [placeholder]="item.inputPlaceHolder" />
+  <div class="yzmImg" *ngIf="item.yzm">
+    <img [src]="yzmCode.imgStr" alt="图片验证码" onClick="getCode()"/>
+  </div>
+</div>

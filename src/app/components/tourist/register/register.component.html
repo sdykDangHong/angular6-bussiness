@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="headerModule">
+    <app-header></app-header>
+  </div>
+  <div class="bodyModule">
+    <div class="register">
+      <h1>欢迎加入三点一刻平台，为您提供营销领域的专业服务</h1>
+      <div class="registerBox">
+        <div class="stepProgress">
+          <div [ngClass]="{'active':step===0}"></div>
+          <div [ngClass]="{'active':step===1}"></div>
+        </div>
+        <h2>注册</h2>
+        <div class="registerInputBox">
+          <app-register-step-one *ngIf="step===0"></app-register-step-one>
+          <app-register-step-two *ngIf="step===1"></app-register-step-two>
+          <div class="btn">
+            <button nz-button nzType="primary" [nzSize]="'large'" class="widthAll" (click)="step=1" *ngIf="step===0">下一步</button>
+            <button nz-button nzType="primary" [nzSize]="'large'" class="widthAll" *ngIf="step===1">开启智能平台</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="footerModule">
+    <app-footer></app-footer>
+  </div>
+</div>
