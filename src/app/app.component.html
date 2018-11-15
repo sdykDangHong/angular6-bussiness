@@ -1,5 +1,5 @@
 <div id="container">
-  <nz-spin [nzSize]="'large'" [nzTip]="'正在努力奔跑……'" [nzSpinning]="loading">
-    <router-outlet></router-outlet>
-  </nz-spin>
+  <nz-spin [nzSize]="'large'" [nzTip]="'正在努力奔跑……'" [nzSpinning]="loading" ngClass="{'loading':loading}"></nz-spin>
+  <router-outlet></router-outlet>
+
 </div>

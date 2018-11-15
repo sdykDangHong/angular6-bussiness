@@ -52,6 +52,11 @@ import { DemanderEchartsComponent } from './components/demander/demander-project
 import { DemanderProjectListComponent } from './components/demander/demander-projects/demander-project-list/demander-project-list.component';
 import { DemanderProjectItemComponent } from './components/demander/demander-projects/demander-project-item/demander-project-item.component';
 import { DemandStatusPipe } from './pipe/demandStatus/demand-status.pipe';
+import { FreelancerProjectsComponent } from './components/freelancer/freelancer-projects/freelancer-projects.component';
+import { FreelancerProjectListComponent } from './components/freelancer/freelancer-projects/freelancer-project-list/freelancer-project-list.component';
+import { FreelancerProjectItemComponent } from './components/freelancer/freelancer-projects/freelancer-project-item/freelancer-project-item.component';
+import { FreelancerSearchProjectsComponent } from './components/freelancer/freelancer-search-projects/freelancer-search-projects.component';
+import { FreelancerSearchProjectListComponent } from './components/freelancer/freelancer-search-projects/freelancer-search-project-list/freelancer-search-project-list.component';
 
 registerLocaleData(zh);
 
@@ -93,6 +98,11 @@ registerLocaleData(zh);
     DemanderProjectListComponent,
     DemanderProjectItemComponent,
     DemandStatusPipe,
+    FreelancerProjectsComponent,
+    FreelancerProjectListComponent,
+    FreelancerProjectItemComponent,
+    FreelancerSearchProjectsComponent,
+    FreelancerSearchProjectListComponent,
   ],
   imports: [
     BrowserModule,

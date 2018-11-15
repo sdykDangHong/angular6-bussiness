@@ -10,6 +10,8 @@ import {ProjectsComponent} from "./components/tourist/projects/projects.componen
 import {FreelancersComponent} from "./components/tourist/freelancers/freelancers.component";
 import {DemandsAddComponent} from "./components/tourist/demands-add/demands-add.component";
 import {DemanderProjectsComponent} from "./components/demander/demander-projects/demander-projects.component";
+import {FreelancerProjectsComponent} from "./components/freelancer/freelancer-projects/freelancer-projects.component";
+import {FreelancerSearchProjectsComponent} from "./components/freelancer/freelancer-search-projects/freelancer-search-projects.component";
 
 const routes: Routes = [
   {path:"",component:HomeComponent},
@@ -27,6 +29,10 @@ const routes: Routes = [
   ]},
   {path:"demander",children:[
       {path:"projects",component:DemanderProjectsComponent}
+  ]},
+  {path:"freelancer",children:[
+      {path:"projects",component:FreelancerProjectsComponent},
+      {path:"project-search",component:FreelancerSearchProjectsComponent}
   ]}
 ];
 

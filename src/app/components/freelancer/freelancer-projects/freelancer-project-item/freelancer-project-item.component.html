@@ -1,0 +1,13 @@
+<div class="projectItem">
+  <div class="line firstLine clear">
+    <div class="lineItem left">{{demandData.tagName}}</div>
+    <div class="lineItem center">{{demandData.title}}</div>
+    <div class="lineItem right">发布日期：{{demandData.createTime | date:['yyyy-MM-dd']}}</div>
+  </div>
+  <div class="line secondLine clear">
+    <div class="lineItem center">项目预算：{{demandData.projectTotalAmount}}元</div>
+  </div>
+  <div class="statusPos">
+    <div class="statusWord">{{demandData.status | demandStatus}}</div>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="searchProjects">
+  <div class="demandList">
+      <app-tourist-project-item *ngFor="let item of demandList" [demandData]="item"></app-tourist-project-item>
+      <div class="page">
+        <nz-pagination [nzPageIndex]="page" [nzTotal]="dataTotal" (nzPageIndexChange)="pageChange($event)"></nz-pagination>
+      </div>
+  </div>
+</div>

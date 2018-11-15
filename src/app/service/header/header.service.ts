@@ -31,8 +31,13 @@ export class HeaderService {
       .set('token',userinfo['token'])
     this.$http.post("/gate/sdyk-bussiness/customer/change-auth",null,{
       params:params
-    }).subscribe(res=>{
+    }).subscribe((res:any)=>{
       this.commonStore.submitUserInfo({...userinfo,loginState:res['data']})
+      if(res.data==1){
+        this.router.navigate(['/demander/projects'])
+      }else{
+        this.router.navigate(['/freelancer/projects'])
+      }
     })
   }
 }
